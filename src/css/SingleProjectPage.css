@@ -1,0 +1,38 @@
+.single-card {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+
+    h2{
+        margin: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        margin: 2rem;
+        margin-top: 0;
+        text-align:justify ;
+    }
+}
+
+.chakra-card__footer.css-1a7q9t8 {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .css-1uq9wz1{
+        max-width: 85%;
+    }
+}
+
+@media (min-width: 800px) {
+    .css-1uq9wz1 {
+        max-width: 70%;
+    }
+
+    .chakra-card__footer.css-1a7q9t8 {
+        justify-content: left;
+        margin-left: 2rem;
+    }
+}

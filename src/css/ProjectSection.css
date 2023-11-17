@@ -1,0 +1,225 @@
+.project-section{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.project-title{
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+
+.mySwiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 10rem;
+}
+
+.projects {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+
+  h1{
+    margin: 1rem .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  p{
+    font-size: .8rem;
+    margin: 0 .5rem 0 .5rem;
+    text-align: justify;
+  }
+}
+
+.tools{
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  margin: .5rem 0;
+  font-size: .9rem;
+
+  li{
+    margin: 0 .3rem;
+    font-weight: 600;
+  }
+}
+
+.read-more{
+  font-weight: 500;
+  font-size: .9rem;
+  display: flex;
+  justify-content: right;
+  margin: 1.5rem;
+  padding: 2rem;
+}
+
+.projects img {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullet-active {
+  background: #09b492a3;
+}
+
+.swiper-pagination-bullet{
+  background-color: rgba(4, 204, 164, 0.64);
+}
+
+.discover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5rem;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .discover-button{
+      min-width: 300px;
+      min-height: 60px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      font-weight: 700;
+      color: #313133;
+      background: #4FD1C5;
+      background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+      border: none;
+      border-radius: 1000px;
+      box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+      transition: all 0.3s ease-in-out 0s;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      padding: 10px;
+      
+    
+    a::before {
+    content: '';
+      border-radius: 1000px;
+      min-width: calc(300px + 12px);
+      min-height: calc(60px + 12px);
+      border: 6px solid #00FFCB;
+      box-shadow: 0 0 60px rgba(0,255,203,.64);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .3s ease-in-out 0s;
+    }
+    
+    a:hover, .button:focus {
+      color: #313133;
+      transform: translateY(-6px);
+    }
+    
+    a:hover::before, button:focus::before {
+      opacity: 1;
+    }
+    
+    
+    a:hover::after, button:focus::after {
+      animation: none;
+      display: none;
+    }
+    
+  }
+
+@media (min-width: 600px) and (max-width: 750px) {
+  .project-section{
+      max-width: 85%;
+  }
+
+  .projects{
+
+    p{
+      font-size: .9rem;
+    }
+  
+   img {
+    width: 60%;
+  }
+  }
+
+  .tools{
+    display: flex;
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1200px) {
+  .project-section{
+    max-width: 85%;
+}
+
+.tools{
+  display: flex;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-items: left;
+  height: 250px;
+
+  p{
+    margin-right: 0;
+    font-size: 1rem;
+  }
+  }
+
+.read-more{
+  margin: 2rem 1rem;
+}
+.projects img {
+  width: 90%;
+  justify-self: left;
+}
+}
+
+@media (min-width: 1201px) {
+  .project-section{
+      max-width: 60%;
+  }
+
+  .projects{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-items: left;
+    height: 300px;
+
+    p{
+      margin-right: 0;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      margin: 0 .5rem 1.5rem .5rem;
+    }
+    }
+
+  .read-more{
+    margin: 2rem 0;
+  }
+  .projects img {
+    width: 90%;
+    justify-self: left;
+  }
+
+  .tools{
+    display: flex;
+    margin-left: .3rem;
+  }
+
+}

@@ -1,0 +1,30 @@
+.aboutMe{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+}
+
+.about-title{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.about-sections {
+    border-left: .01rem gray solid;
+    box-shadow: 2px  1px rgba(128, 128, 128, 0.732);;
+}
+
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .aboutMe{
+        max-width: 85%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .aboutMe{
+        max-width: 60%;
+    }
+}
+

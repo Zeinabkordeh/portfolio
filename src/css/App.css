@@ -1,0 +1,71 @@
+body {
+    cursor: url("../../image/cursor-1.png"), auto;
+  }
+  
+  .app-cursor {
+    border: 1px solid #04cca4a3;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: none;
+    border-radius: 50%;
+    z-index: 999;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    animation: cursorAnim 0.5s infinite alternate;
+  }
+  
+  /* Animation for 2nd outer circle */
+  .app-cursor::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border: 8px solid #00FFCB;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -9px;
+    left: -9px;
+    z-index: -1;
+    animation: cursorAnim2 0.5s infinite alternate;
+    animation-delay: 0.7s;
+  }
+  
+  /* Keyframe animations */
+  @keyframes cursorAnim {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2);
+    }
+  }
+  
+  @keyframes cursorAnim2 {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.4);
+    }
+  }
+  
+  @keyframes cursorAnim3 {
+    0% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(5);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  
+  .expand {
+    animation: cursorAnim3 0.5s forwards;
+    border: 1px solid rgba(0,255,203,.64);
+  }
+  
