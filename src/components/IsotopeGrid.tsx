@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Isotope from 'isotope-layout';
-import isotopeItems from '../isotopeItems';
+import isotopeItems from '../utils/isotopeItems';
 import '../css/IsotopeGrid.css';
+import { useTheme } from '../utils/themeContext';
 
 interface IsotopeGridProps {
   className?: string;
@@ -10,6 +11,13 @@ interface IsotopeGridProps {
 const IsotopeGrid: React.FC<IsotopeGridProps> = ({ className }) => {
   const isotope = useRef<Isotope | null>(null);
   const [filterKey, setFilterKey] = useState<string>('*');
+  const { theme } = useTheme();
+
+   const sharedStyles = {
+    color: theme.secondaryColor,
+    backgroundColor: theme.primaryColor,
+    border: `1px solid ${theme.secondaryColor}`,
+  };
 
   useEffect(() => {
     isotope.current = new Isotope('.isotope-container', {
@@ -47,29 +55,29 @@ const IsotopeGrid: React.FC<IsotopeGridProps> = ({ className }) => {
  
   return (
     <>
-      <div className="selector-buttons">
-        <button className="button-checked" id="*" onClick={handleFilterKeyChange('*')}>
+      <div className="selector-buttons" >
+        <button className="button-checked" id="*" onClick={handleFilterKeyChange('*')} style={sharedStyles} >
           All
         </button>
-        <button className="" id="fave" onClick={handleFilterKeyChange('fave')}>
+        <button className="" id="fave" onClick={handleFilterKeyChange('fave')} style={sharedStyles} >
           Favourites
         </button>
-        <button className="" id="devo" onClick={handleFilterKeyChange('devo')}>
+        <button className="" id="devo" onClick={handleFilterKeyChange('devo')} style={sharedStyles} >
           Develop
         </button>
-        <button className="" id="design" onClick={handleFilterKeyChange('design')}>
+        <button className="" id="design" onClick={handleFilterKeyChange('design')} style={sharedStyles} >
           Design
         </button>
-        <button className="" id="other" onClick={handleFilterKeyChange('other')}>
+        <button className="" id="other" onClick={handleFilterKeyChange('other')} style={sharedStyles} >
           Other
         </button>
       </div>
 
       <hr />
 
-      <div className="isotope-container">
+      <div className="isotope-container" >
         {isotopeItems.map((item, index) => (
-          <div key={index} className={`filter-item ${item.classes}`}>
+          <div key={index} className={`filter-item ${item.classes}`} style={{ color: theme.primaryColor, backgroundColor: theme.secondaryColor }}>
             {item.text}
           </div>
         ))}

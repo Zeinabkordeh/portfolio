@@ -64,13 +64,13 @@
   margin: 0 auto;
 }
 
-.swiper-pagination-bullet-active {
+/* .swiper-pagination-bullet-active {
   background: #09b492a3;
-}
+} */
 
-.swiper-pagination-bullet{
+/* .swiper-pagination-bullet{
   background-color: rgba(4, 204, 164, 0.64);
-}
+} */
 
 .discover{
   display: flex;

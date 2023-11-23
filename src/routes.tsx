@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import SingleProjectPage from "./components/SingleProjectPage";
 import ErrorPage from "./components/ErorrPage";
 import App from "./App";
+import ProjectsPage from "./components/ProjectsPage";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <App /> },
       { path: "projects/:id", element: <SingleProjectPage/> },
+      { path: "projects/", element: <ProjectsPage/> },
     ],
   },
 ]);

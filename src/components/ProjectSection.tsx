@@ -8,8 +8,17 @@ import { Link } from 'react-router-dom';
 
 
 export default function ProjectSection() {
+
+  // const theme = useTheme();
+
+  // const sharedStyles = {
+  //   color: theme.secondaryColor,
+  //   backgroundColor: theme.primaryColor,
+  //   // border: `1px solid ${theme.secondaryColor}`,
+  // };
+
   return (
-    <div className='project-section'>
+    <div className='project-section' id='project-section'>
       <h1 className='project-title'>Featured Projects</h1>
       <Swiper
         spaceBetween={30}
@@ -77,7 +86,7 @@ export default function ProjectSection() {
 
         <SwiperSlide className='discover'>
           <button className='discover-button'>
-          <a href="">Discover More</a>
+          <a href="projects">Discover More</a>
           </button>
         </SwiperSlide>
       </Swiper>

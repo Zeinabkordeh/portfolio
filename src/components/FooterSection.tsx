@@ -1,13 +1,16 @@
 import '../css/FooterSection.css';
+import React from 'react';
 import { Icon } from '@chakra-ui/react'
 import { GrLinkedinOption, GrMail, GrGithub } from 'react-icons/gr'
+import { useTheme } from '../utils/themeContext';
+import '../css/App.css';
 
 const FooterSection = () => {
   
-
+  const { theme } = useTheme();
   return (
     <>
-      <div className='footer-section'>
+      <div className='footer-section' style={{ color: theme.primaryColor, backgroundColor: theme.secondaryColor }}>
         <h1>Contact With Me!</h1>
         <div>
             <a href="https://www.linkedin.com/in/zeinabkordeh/">

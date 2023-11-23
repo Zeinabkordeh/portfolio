@@ -1,0 +1,75 @@
+.project-card-design{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+}
+
+.chakra-card__header.css-1sl53ol {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.project-card-single{
+    margin: 1rem;
+    padding: 1rem;
+
+    p{
+        text-align: justify;
+        font-size: .85rem;
+        padding-top: 0;
+    }
+    h2{
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
+
+
+@media (min-width: 450px) and (max-width: 800px) {
+
+    .project-card-single{
+        margin: 1rem;
+        padding: 1rem;
+        
+        p{
+            font-size: 1rem;
+            padding: 1rem;
+            padding-top: 0;
+        }
+        h2{
+            margin-top: 2rem;
+            margin-left: .8rem;
+        }
+
+        img{
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1300px){
+
+    .project-card-design{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1301px) {
+   
+    .project-card-design{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 70%;
+    }
+}
+

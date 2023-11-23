@@ -1,6 +1,5 @@
 .footer-section{
-    background-color: #1DB096;
-    color: white;
+    background-color: var(--primary-color);
     margin-top: 5rem;
     display: flex;
     flex-direction: column;

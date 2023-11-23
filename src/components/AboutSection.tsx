@@ -3,9 +3,11 @@ import IsotopeGrid from './IsotopeGrid';
 import '../css/AboutSection.css';
 import { useEffect, useRef, useState } from 'react';
 import Isotope from 'isotope-layout';
+import { useTheme } from '../utils/themeContext';
 
 const AboutSection = () => {
 
+  const { theme } = useTheme();
 
   const isotope = useRef<Isotope | null>(null);
   const [filterKey, setFilterKey] = useState<string>('all');
@@ -46,12 +48,12 @@ const AboutSection = () => {
 
   return (
     <>
-      <div className='aboutMe'>
+      <div className='aboutMe' id='about-section'>
         <h1 className='about-title'>About Me</h1>
         <Accordion allowToggle>
           <AccordionItem className='about-sections'>
             <h2>
-              <AccordionButton _expanded={{ bg: '#f2f9ef7b', color: 'rgb(0,128,0)' }} key='bioOne'>
+              <AccordionButton _expanded={{ bg: theme.primaryColor, color: theme.secondaryColor }} key='bioOne'>
                 <Box as="span" flex='1' textAlign='left'>
                   Who am I
                 </Box>
@@ -66,7 +68,7 @@ const AboutSection = () => {
 
           <AccordionItem className='about-sections'>
             <h2>
-              <AccordionButton _expanded={{ bg: '#f2f9ef7b', color: 'rgb(0,128,0)' }} key='bioTwo'>
+              <AccordionButton _expanded={{ bg: theme.primaryColor, color: theme.secondaryColor  }} key='bioTwo'>
                 <Box as="span" flex='1' textAlign='left'>
                   Outside of Coding?
                 </Box>
@@ -83,7 +85,7 @@ const AboutSection = () => {
 
           <AccordionItem className='about-sections'>
             <h2>
-              <AccordionButton _expanded={{ bg: '#f2f9ef7b', color: 'rgb(0,128,0)' }} key='bioThree' onClick={handleFilterKeyChange('*')}>
+              <AccordionButton _expanded={{ bg: theme.primaryColor, color: theme.secondaryColor  }} key='bioThree' onClick={handleFilterKeyChange('*')}>
                 <Box as="span" flex='1' textAlign='left'>
                   Skills
                 </Box>
