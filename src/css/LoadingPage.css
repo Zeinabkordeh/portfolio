@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Henny+Penny&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Sofia+Sans+Condensed:ital,wght@0,400;0,800;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+
+.loading-page {
+    text-align:center;
+    padding-top:30vh;
+    height:100vh;
+    overflow:hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    justify-content: center;
+
+    &.scale-down {
+        animation: scaleDown 0.5s ease-out; 
+      }
+    }
+
+.name {
+    font-weight: bold;
+    background: linear-gradient(90deg, #666666 10%, #444444 35%, #77cc77 61%, #225522 100%);
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 3rem;
+    filter: brightness(70%);
+    margin: 10px 0;
+    z-index: -1;
+    background-size: 200% 100%;
+    animation: gradientMove 4s linear infinite;
+    }
+
+
+.overal {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow:hidden;
+    white-space:nowrap;
+    animation: showup 7s forwards; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0;
+    line-height:2;
+}
+
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#description:last-of-type {
+    width: 0;
+    animation: reveal 7s 1 forwards; 
+}
+
+#description:last-of-type span {
+    margin-left: 0;
+    animation: slidein 7s 1 forwards; 
+}
+
+.job-title{
+    font-family:'Sofia Sans Condensed', Arial, sans-serif;;
+    font-size:1.4rem;
+    color: #225522;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px; 
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 350px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1; 
+        width: 350px; 
+    }
+} 
+
+
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.svg-animation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 140vh;
+    z-index: -1;
+    opacity: 5%;
+}
+
+.Continue-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin: 0 auto;
+    bottom: 20rem;
+  }
+
+
+
+.name-style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  (max-width: 420px){
+    
+    .loading-page{
+        display: flex;
+        position: relative;
+        top: -10rem;
+    }
+
+    .overal p{
+        font-size: 1.2rem;
+    }
+
+    .overal h4{
+        font-size: 2rem;
+        padding: 0 2.3rem;
+    }
+
+    .Continue-area {
+        bottom: 30rem;
+        font-size: .9rem;
+      }
+}
+
+

@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import singlePageContent from '../hooks/singlePageContents';
-import { FaGithub } from 'react-icons/fa';
-import { LuScreenShare } from 'react-icons/lu';
+import { Box, Button, Card, CardBody, CardFooter, CardHeader, Heading, Image, Text } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/ProjectsPage.css';
-import ColorModeSwitch from './ColorModeSwitch';
+import singlePageContent from '../hooks/singlePageContents';
 import { truncateText } from '../utils/truncateText';
-import { Button, Card, CardBody, CardFooter, CardHeader, Heading, SimpleGrid, Text, Image, Box } from '@chakra-ui/react';
+import ColorModeSwitch from './ColorModeSwitch';
+import FooterSection from './FooterSection';
 
 function ProjectsPage() {
 //   const { id } = useParams();
@@ -79,6 +78,7 @@ function ProjectsPage() {
             ))}
             {/* </SimpleGrid> */}
         </Box>
+        <FooterSection />
     </>
   );
 }

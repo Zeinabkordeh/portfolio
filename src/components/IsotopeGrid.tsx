@@ -1,14 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Isotope from 'isotope-layout';
-import isotopeItems from '../utils/isotopeItems';
+import isotopeItems from '../hooks/isotopeItems';
 import '../css/IsotopeGrid.css';
 import { useTheme } from '../utils/themeContext';
 
-interface IsotopeGridProps {
-  className?: string;
-}
 
-const IsotopeGrid: React.FC<IsotopeGridProps> = ({ className }) => {
+
+const IsotopeGrid = () => {
   const isotope = useRef<Isotope | null>(null);
   const [filterKey, setFilterKey] = useState<string>('*');
   const { theme } = useTheme();

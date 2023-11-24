@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import singlePageContent from '../singlePageContents';
+import singlePageContent from '../hooks/singlePageContents';
 import { FaGithub } from "react-icons/fa";
 import { LuScreenShare } from "react-icons/lu";
 import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Stack, Text, Image, Link} from '@chakra-ui/react';
 import '../css/SingleProjectPage.css'
+import FooterSection from './FooterSection';
 
 const SingleProjectPage = () => {
   const { id } = useParams();
@@ -86,6 +87,7 @@ const SingleProjectPage = () => {
           </ButtonGroup>
         </CardFooter>
       </Card>
+      <FooterSection />
     </>
   );
 }

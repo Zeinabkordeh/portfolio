@@ -1,9 +1,9 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Center, Flex, Grid } from '@chakra-ui/react'
-import IsotopeGrid from './IsotopeGrid';
-import '../css/AboutSection.css';
-import { useEffect, useRef, useState } from 'react';
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react';
 import Isotope from 'isotope-layout';
+import { useEffect, useRef, useState } from 'react';
+import '../css/AboutSection.css';
 import { useTheme } from '../utils/themeContext';
+import IsotopeGrid from './IsotopeGrid';
 
 const AboutSection = () => {
 

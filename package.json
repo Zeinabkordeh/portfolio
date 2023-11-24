@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview --port 5004"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
@@ -15,10 +15,13 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.18",
+    "@types/lodash": "^4.14.202",
     "@types/react-router-dom": "^5.3.3",
     "framer-motion": "^10.16.4",
-    "gsap": "^3.12.2",
+    "gsap": "^3.9.1",
     "isotope-layout": "^3.0.6",
+    "lodash": "^4.15.0",
+    "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -28,17 +31,16 @@
     "react-slick": "^0.29.0",
     "react-spring": "^9.7.3",
     "slick-carousel": "^1.8.1",
-    "snapsvg": "^0.5.1",
+    "snapsvg": "^0.4.0",
     "swiper": "^11.0.4"
   },
   "devDependencies": {
-    "@types/gsap": "^3.0.0",
     "@types/isotope-layout": "^3.0.11",
     "@types/react": "^18.2.36",
     "@types/react-dom": "^18.2.14",
     "@types/react-router-hash-link": "^2.4.9",
     "@types/react-slick": "^0.23.12",
-    "@types/snapsvg": "^0.5.7",
+    "@types/snapsvg": "^0.5.8",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",

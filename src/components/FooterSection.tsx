@@ -1,9 +1,8 @@
-import '../css/FooterSection.css';
-import React from 'react';
-import { Icon } from '@chakra-ui/react'
-import { GrLinkedinOption, GrMail, GrGithub } from 'react-icons/gr'
-import { useTheme } from '../utils/themeContext';
+import { Icon } from '@chakra-ui/react';
+import { GrGithub, GrLinkedinOption, GrMail } from 'react-icons/gr';
 import '../css/App.css';
+import '../css/FooterSection.css';
+import { useTheme } from '../utils/themeContext';
 
 const FooterSection = () => {
   
