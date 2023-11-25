@@ -28,6 +28,24 @@
     }
 }
 
+.chakra-card__footer.css-1a7q9t8 button :hover {
+    color: black;
+
+}
+
+.chakra-card__footer.css-1a7q9t8 button {
+    justify-content: center;
+    background-color: #597A72;
+    color: #E7E7E7;
+    margin-left: 0;
+  }
+
+@media (min-width: 800px) {
+    .chakra-card__footer.css-1a7q9t8 {
+      justify-content: center;
+      margin-left: 0;
+    }
+  }
 
 @media (min-width: 450px) and (max-width: 800px) {
 

@@ -5,7 +5,7 @@ interface SinglePageContent {
     mainText: string;
     tools: string[];
     gitHubAddress?: string;
-    liveSiteAddress: string;
+    liveSiteAddress?: string;
     imageSmall?: string;
 
 }
@@ -23,7 +23,7 @@ const singlePageContent: SinglePageContent[] = [
     },
 
     {   id: "vLive",
-        imageHeader: "/image/tabz-moviedatabase.png",
+        imageHeader: "/image/vlive.png",
         imageSmall: "/image/vlive-s.png",
         title: "Vancouver Live",
         mainText: "Vancouver Live is an annual convention center dedicated to hosting live music events, and our website ensures a seamless experience for music enthusiasts. Developed as a collaborative project, we utilized Trello as a project management tool, employing an agile system for efficient teamwork. The website, built on WordPress and WooCommerce, facilitates easy ticket purchases, provides detailed information about performers, and presents the event schedule in a user-friendly manner. Our process began with a comprehensive Website Content Inventory and Information Architecture, followed by meticulous wireframing and high-fidelity mockups. A well-structured site development plan guided the coding phase. One notable feature is the integration of the Google Maps API to enhance user navigation and provide location details. Additionally, a strong emphasis was placed on creating a detailed event schedule, showcasing effective planning and organization. The collaborative effort and strategic approach to development have resulted in a website that seamlessly combines functionality and aesthetics for an optimal user experience.",
@@ -34,13 +34,13 @@ const singlePageContent: SinglePageContent[] = [
 
 
     {   id: "zeiko",
-        imageHeader: "/image/tabz-moviedatabase.png",
-        imageSmall: "/image/tabz-s.png",
+        imageHeader: "/image/portfolio.png",
+        imageSmall: "/image/portfolio-s.png",
         title: "Zeiko",
         mainText: "My portfolio showcases my proficiency in web development using React and TypeScript, complemented by Vite for fast build times and Chakra UI for a streamlined design. The design process began with meticulous wireframing, followed by the creation of high-fidelity mockups to ensure a polished and user-friendly interface. The transition from design to code was seamless, highlighting my skills in both areas.To enhance the user experience, I incorporated animations and utilized Isotope for dynamic content presentation. This not only adds a touch of elegance but also makes the portfolio more engaging and visually appealing. The journey from concept to execution is well-documented, reflecting my commitment to a thoughtful and creative design process.",
         tools: ["React", "TypeScript", "Chakra UI", "CSS", "Figma"],
         gitHubAddress: "https://github.com/Zeinabkordeh/portfolio",
-        liveSiteAddress: "",
+        liveSiteAddress: "https://zeiko.ca/",
 
     },
 
@@ -72,8 +72,8 @@ const singlePageContent: SinglePageContent[] = [
         title: "Calculator",
         mainText: "Developed a feature-rich calculator using React, enabling basic arithmetic operations with decimal precision. Advanced memory functions (M+, M-, MR, MC) provide enhanced usability. The clean and intuitive interface ensures a seamless user experience. This project showcases my proficiency in React and ability to create interactive, functional applications.",
         tools: ["React", "HTML", "CSS"],
-        liveSiteAddress: "https://zekoyoga.myshopify.com/",
-
+        gitHubAddress: "https://github.com/Zeinabkordeh/calculator",
+        liveSiteAddress: "",
     },
 
    

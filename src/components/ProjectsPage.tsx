@@ -73,7 +73,7 @@ function ProjectsPage() {
                 </CardBody>
                 <CardFooter>
                 <Button>
-                    <Link to={`/singleProject/${content.id}`} >Read More</Link>
+                    <Link to={`/singleProject/${content.id}`}  className='read-more-single'>Read More</Link>
                 </Button>
                 </CardFooter>
             </Card>

@@ -9,6 +9,21 @@
     margin: 0 auto;
     margin-bottom: 7rem;
     
+    p{
+        margin-left: .5rem;
+        text-align: justify;
+        padding-right: 1rem;
+        max-width: 100%;
+    }
+
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
 }
 
 .about-title{
@@ -24,16 +39,49 @@
     box-shadow: 2px  1px rgba(128, 128, 128, 0.732);;
 }
 
+.css-1eziwv {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 700;
+    svg{
+        margin-right: .5rem;
+    }
+}
+
 
 @media (min-width: 600px) and (max-width: 1200px) {
     .aboutMe{
         max-width: 85%;
+
+        p{
+            padding-right: 6rem;
+            max-width: 70%;
+        }
+        img{
+            right: 12%;
+        }
     }
 }
 
 @media (min-width: 1201px) {
     .aboutMe{
         max-width: 60%;
+
+        p{
+            margin-left: .5rem;
+            text-align: justify;
+            padding-right: 5rem;
+            max-width: 70%;
+        }
+
+        img{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            position: absolute;
+            right: 25%;
+        }
     }
 }
 

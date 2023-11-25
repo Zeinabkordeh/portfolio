@@ -25,8 +25,7 @@ const Navbar: React.FC = () => {
       </div>
       <div className='scroll-section'>
         <div className='line'></div>
-        <p className='scroll-down'>
-      scroll</p>
+        <p className='scroll-down'>scroll</p>
       </div>
     </>
   );

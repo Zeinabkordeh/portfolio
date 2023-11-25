@@ -1,9 +1,12 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react';
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box,  } from '@chakra-ui/react';
 import Isotope from 'isotope-layout';
 import { useEffect, useRef, useState } from 'react';
 import '../css/AboutSection.css';
+import { GiSkills } from "react-icons/gi";
 import { useTheme } from '../utils/themeContext';
 import IsotopeGrid from './IsotopeGrid';
+import { GoPersonFill } from "react-icons/go";
+import { FaMountainSun } from "react-icons/fa6";
 
 const AboutSection = () => {
 
@@ -48,14 +51,27 @@ const AboutSection = () => {
 
   return (
     <div className='about-wrapper'>
-      <div className='aboutMe' id='about-section'>
+      <section className='aboutMe' id='about-section'>
         <h1 className='about-title'>About Me</h1>
+        <img src="/image/zeinab.jpg" alt="My Image" width='180px' />
+        <div>
+          <p>Hey there, fellow coder and design aficionado!</p>
+          <br />
+          <p>I'm Zeinab a passionate front-end web developer with a love for crafting seamless digital experiences. This space is where lines of code and pixels dance together, bringing ideas to life.</p>
+          <br />
+          <p>Whether you're here for inspiration, collaboration, or a bit of both, I'm excited to share my journey with you. Let's build something extraordinary!</p>
+          <br />
+          <p>Happy coding,</p>
+          <div style={{ margin: '10px 0' }}></div>
+          <p>Zeinab Kordeh</p>
+          <div style={{ margin: '20px 0' }}></div>
+        </div>
         <Accordion allowToggle>
           <AccordionItem className='about-sections'>
             <h2>
               <AccordionButton _expanded={{ bg: theme.primaryColor, color: theme.secondaryColor }} key='bioOne'>
                 <Box as="span" flex='1' textAlign='left'>
-                  Who am I
+                  {<GoPersonFill/>} Who am I
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
@@ -70,7 +86,7 @@ const AboutSection = () => {
             <h2>
               <AccordionButton _expanded={{ bg: theme.primaryColor, color: theme.secondaryColor  }} key='bioTwo'>
                 <Box as="span" flex='1' textAlign='left'>
-                  Outside of Coding?
+                  {<FaMountainSun/>}Outside of Coding?
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
@@ -87,7 +103,7 @@ const AboutSection = () => {
             <h2>
               <AccordionButton _expanded={{ bg: theme.primaryColor, color: theme.secondaryColor  }} key='bioThree' onClick={handleFilterKeyChange('*')}>
                 <Box as="span" flex='1' textAlign='left'>
-                  Skills
+                {<GiSkills />} Skills
                 </Box>
                 <AccordionIcon  />
               </AccordionButton>
@@ -97,7 +113,7 @@ const AboutSection = () => {
             </AccordionPanel >
           </AccordionItem>
         </Accordion>
-      </div>
+      </section>
     </div>
   );
 }

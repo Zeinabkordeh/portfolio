@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import singlePageContent from '../hooks/singlePageContents';
 import { FaGithub } from "react-icons/fa";
 import { LuScreenShare } from "react-icons/lu";
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Stack, Text, Image, Link} from '@chakra-ui/react';
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Stack, Text, Image, Link, Box} from '@chakra-ui/react';
 import '../css/SingleProjectPage.css'
 import FooterSection from './FooterSection';
 import ToggleNav from './ToggleNav';
@@ -65,24 +65,24 @@ const SingleProjectPage = () => {
             <Heading size='md'>{content[0].title}</Heading>
             <Text>{content[0].mainText}</Text>
           </Stack>
-          <Text>
-            <ul>
+          <Box>
+            <ul className='tools-section'>
                 {content[0].tools.map((tool, index) => (
                     <li key={index}>{tool}</li>
                 ))}
             </ul>
-            </Text>
+          </Box>
         </CardBody>
         <Divider />
         <CardFooter>
           <ButtonGroup spacing='2'>
-            <Button leftIcon={<FaGithub />} w='7rem' variant='solid' colorScheme='blue'>
-              <Link href="">
+            <Button leftIcon={<FaGithub />} w='7rem' variant='outline' bgColor='#597A72' color='#E7E7E7' className='button-media'>
+              <Link href={content[0].gitHubAddress} >
                 GitHub
               </Link>
             </Button>
-            <Button leftIcon={<LuScreenShare />} w='7rem' variant='solid' colorScheme='blue'>
-              <Link href="">
+            <Button  leftIcon={<LuScreenShare />} w='7rem' variant='outline' bgColor='#597A72' color='#E7E7E7' className='button-media'>
+              <Link href={content[0].liveSiteAddress} >
                 Live Site
               </Link>
             </Button>

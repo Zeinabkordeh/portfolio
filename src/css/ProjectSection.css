@@ -52,12 +52,17 @@
 }
 
 .read-more{
-  font-weight: 500;
-  font-size: .9rem;
+  font-weight: 800;
+  font-size: 1rem;
   display: flex;
   justify-content: right;
   margin: 1.5rem;
   padding: 2rem;
+  color: #405852;
+}
+
+.read-more:hover{
+  color: #313133;
 }
 
 .projects img {

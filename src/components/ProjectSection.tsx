@@ -52,7 +52,7 @@ export default function ProjectSection() {
           </div>
         </SwiperSlide>
         <SwiperSlide className='projects'>
-          <img src="../image/new-moviedatabase.png" alt="project2" />
+          <img src="../image/portfolio.png" alt="project2" />
           <div>
           <h1>Zeiko.ca</h1>
           <p>This portfolio was designed and developed as a platform to showcase my overall development and design skills that I learned within the TWD program, built using React/ TypeScript ...</p>
@@ -68,7 +68,7 @@ export default function ProjectSection() {
         </SwiperSlide>
         
         <SwiperSlide className='projects'>
-          <img src="../image/new-moviedatabase.png" alt="project3" />
+          <img src="../image/vlive.png" alt="project3" />
           <div>
           <h1>Vancouver Live</h1>
           <p>Vancouver Live hosts live music events. Our website enables easy ticket purchases, offers performer details, and provides the event schedule....</p>
