@@ -37,7 +37,7 @@ export default function ProjectSection() {
       >
         
         <SwiperSlide className='projects'>
-          <img src="../image/new-moviedatabase.png" alt="project1" />
+          <img src="../image/tabz-moviedatabase.png" alt="project1" />
           <div>
           <h1>TABZ</h1>
           <p>TABZ is an online movie database built in React.js using API that enables users to explore, search, and add favorite movies that stored in the local storage ...</p>
