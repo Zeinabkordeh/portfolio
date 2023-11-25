@@ -77,10 +77,11 @@ const AboutSection = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-            
+            <div className='bio-section'>
               <p>With a master's degree in architectural design, my passion for design and technology naturally led me into the world of web design. It's where I've found the sweet spot, striking a balance between creativity and tech wizardry. Beyond the professional realm, you'll often find me practicing yoga for that much-needed Zen moment or hitting the hiking trails to escape the digital grind. And when I'm not pixel-pushing, I'm all about painting and crafting, it's like my little analog escape room.</p>
 
               <p>These interests provide a well-rounded perspective, injecting a touch of artistry and aesthetics into my digital work. So, I'm your go-to person for creating visually appealing and user-friendly websites, blending my love for design and technology into a neat online package.</p>
+            </div>
             </AccordionPanel>
           </AccordionItem>
 

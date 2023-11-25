@@ -5,12 +5,16 @@ import LoadingScreen from './components/LoadingScreen';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import './css/App.css';
 import Navbar from './components/NavBar';
+import { useColorMode } from '@chakra-ui/react';
 
 type AppProps = {};
 
 const App: React.FC<AppProps> = () => {
   const [loading, setLoading] = useState(true);
   const [isDesktop, setIsDesktop] = useState<boolean>(false);
+  
+  const { toggleColorMode, colorMode } = useColorMode();
+  if (colorMode === "dark") toggleColorMode();
 
   const handleTransitionComplete = () => {
     setLoading(false);
