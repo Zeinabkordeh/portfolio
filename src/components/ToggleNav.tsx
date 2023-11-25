@@ -41,7 +41,7 @@ const ToggleNav: React.FC = () => {
               </div>
               <ul>
                   <li>
-                    <Link to="/direct=true" >Home</Link>
+                    <Link to="/" >Home</Link>
                   </li>
                   <li>
                     <Link to="/projects" >Projects</Link>

@@ -86,7 +86,7 @@ export default function ProjectSection() {
 
         <SwiperSlide className='discover'>
           <button className='discover-button'>
-          <a href="projects">Discover More</a>
+          <a href="projects/">Discover More</a>
           </button>
         </SwiperSlide>
       </Swiper>
