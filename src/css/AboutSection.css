@@ -58,7 +58,13 @@
             padding-right: 6rem;
             max-width: 70%;
         }
+
         img{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            position: absolute;
+            margin-bottom: 2rem;
             right: 12%;
         }
     }

@@ -24,8 +24,8 @@ const Navbar: React.FC = () => {
       <svg id="svg" ref={svgRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 889" style={{ width: '100%', height: 'auto' }}></svg>
       </div>
       <div className='scroll-section'>
-        <div className='line'></div>
-        <p className='scroll-down'>scroll</p>
+        {/* <div className='line'></div>
+        <p className='scroll-down'>scroll</p> */}
       </div>
     </>
   );
