@@ -14,8 +14,8 @@ const ThemeContext = createContext<{
 
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>({
-    primaryColor: '#00f5d4',
-    secondaryColor: '#097969',
+    primaryColor: '#E7E7E7',
+    secondaryColor: '#597A72',
   });
 
   return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;

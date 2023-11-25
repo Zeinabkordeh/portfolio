@@ -1,13 +1,22 @@
+.about-wrapper{
+    background-color: #597a722b;
+    padding-top: 4rem;
+    padding-bottom: .5rem;
+}
+
 .aboutMe{
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 7rem;
+    
 }
 
 .about-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #405852;
 }
 
 .about-sections {

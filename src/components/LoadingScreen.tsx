@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/LoadingPage.css';
+import { Link } from 'react-router-dom';
 
 
 interface LoadingPageProps {
@@ -38,8 +39,8 @@ interface LoadingPageProps {
         </div>
       </section>
       <article className='Continue-area'>
-        <svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
-        <p>Click to Continue</p>
+        <svg fill="#7c7b7b" width="34" height="34" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+        <Link to={'?direct=true'}>Click Anywhere</Link>
       </article>
     </>
   );

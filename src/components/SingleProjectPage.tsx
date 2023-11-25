@@ -6,6 +6,7 @@ import { LuScreenShare } from "react-icons/lu";
 import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Stack, Text, Image, Link} from '@chakra-ui/react';
 import '../css/SingleProjectPage.css'
 import FooterSection from './FooterSection';
+import ToggleNav from './ToggleNav';
 
 const SingleProjectPage = () => {
   const { id } = useParams();
@@ -50,6 +51,7 @@ const SingleProjectPage = () => {
 
   return (
     <>
+      <ToggleNav/>
       {isDesktop && <div className="app-cursor"></div>}
       <Card className='single-card'>
         <CardBody>

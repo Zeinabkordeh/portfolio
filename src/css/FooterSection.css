@@ -1,18 +1,22 @@
 .footer-section{
     background-color: var(--primary-color);
-    margin-top: 5rem;
+    margin-top: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     h1{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        font-family: 'Bebas Neue', sans-serif;
     }
     
     p{
     font-size: .9rem;
     margin-bottom: .5rem;
+    font-family: 'Poppins', sans-serif;
     }
 }
 

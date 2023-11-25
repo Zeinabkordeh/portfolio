@@ -4,9 +4,11 @@
 }
 
 .project-title{
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: .5rem;
   font-weight: 500;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #405852;
 }
 
 .mySwiper {
@@ -64,9 +66,9 @@
   margin: 0 auto;
 }
 
-/* .swiper-pagination-bullet-active {
-  background: #09b492a3;
-} */
+.swiper-pagination-bullet-active {
+  background: #597A72;
+}
 
 /* .swiper-pagination-bullet{
   background-color: rgba(4, 204, 164, 0.64);
@@ -86,19 +88,19 @@
   }
 
   .discover-button{
-      min-width: 300px;
+      min-width: 250px;
       min-height: 60px;
       font-family: 'Nunito', sans-serif;
-      font-size: 22px;
+      font-size: 15px;
       text-transform: uppercase;
       letter-spacing: 1.3px;
       font-weight: 700;
-      color: #313133;
-      background: #4FD1C5;
-      background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+      color: #ffffff;
+      background: #597A72;
+      background: linear-gradient(90deg, rgb(118, 161, 150) 0%, rgba(88, 121, 113,1) 100%);
       border: none;
       border-radius: 1000px;
-      box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+      box-shadow: 12px 12px 24px rgba(88, 121, 113,.64);
       transition: all 0.3s ease-in-out 0s;
       cursor: pointer;
       outline: none;
@@ -109,10 +111,10 @@
     a::before {
     content: '';
       border-radius: 1000px;
-      min-width: calc(300px + 12px);
+      min-width: calc(250px + 12px);
       min-height: calc(60px + 12px);
-      border: 6px solid #00FFCB;
-      box-shadow: 0 0 60px rgba(0,255,203,.64);
+      border: 6px solid rgb(88, 121, 113);
+      box-shadow: 0 0 60px rgba(88, 121, 113,.64);
       position: absolute;
       top: 50%;
       left: 50%;
@@ -220,6 +222,10 @@
   .tools{
     display: flex;
     margin-left: .3rem;
+  }
+
+  .discover-button{
+    font-size: 22px;
   }
 
 }

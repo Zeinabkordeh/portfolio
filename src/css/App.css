@@ -1,7 +1,7 @@
 
-/* body {
-    cursor: url("../../image/cursor.png"), auto;
-  } */
+body p{
+    font-family: 'Poppins', sans-serif;
+  }
   
   .app-cursor {
     /* border: 1px solid #04cca4a3; */
@@ -23,7 +23,7 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    border: 8px solid #00FFCB;
+    border: 8px solid #31423e;
     border-radius: 50%;
     opacity: 0.5;
     top: -9px;
@@ -67,7 +67,7 @@
   
   .expand {
     animation: cursorAnim3 0.5s forwards;
-    border: 1px solid rgba(0,255,203,.64);
+    border: 1px solid rgba(88, 121, 113,.64);
   }
   
   

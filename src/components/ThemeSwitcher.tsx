@@ -13,7 +13,7 @@ const ThemeSwitcher: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='changeColor' style={{ display: 'none' }}>
       <label>Light Color:</label>
       <input
         type="color"

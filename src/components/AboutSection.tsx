@@ -47,7 +47,7 @@ const AboutSection = () => {
 
 
   return (
-    <>
+    <div className='about-wrapper'>
       <div className='aboutMe' id='about-section'>
         <h1 className='about-title'>About Me</h1>
         <Accordion allowToggle>
@@ -98,7 +98,7 @@ const AboutSection = () => {
           </AccordionItem>
         </Accordion>
       </div>
-    </>
+    </div>
   );
 }
 

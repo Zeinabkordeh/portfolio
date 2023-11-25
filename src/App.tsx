@@ -61,6 +61,7 @@ const App: React.FC<AppProps> = () => {
     return (
       <>
         <ThemeSwitcher/>
+        <Navbar/>
         <LandingPage />
         <div>
           {isDesktop && <div className="app-cursor" ></div>}        

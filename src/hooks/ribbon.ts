@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { TweenMax, Power2 } from 'gsap'
+import { TweenMax, Power2 } from 'gsap';
 
 interface State {
     type: string;
@@ -28,21 +28,21 @@ export class Ribbon
     states = {
         start: { 
             type: 'start',
-            start: {thickness: 0, top: 60, left: 0},
-            end: {thickness: 0, top: 60, left: 100},
-            wave: {amplitude: 0, frequency: 0.008, transitionSpeed: 0.5}
+            start: {thickness: 1, top: 60, left: 0 },
+            end: {thickness: 1, top: 60, left: 100 },
+            wave: {amplitude: 0, frequency: 0.008, transitionSpeed: 0.2}
         },
         home: { 
             type: 'home',
-            start: {thickness: 30, top: 50, left: 0},
-            end: {thickness: 15, top: 60, left: 100},
+            start: {thickness: 12, top: 60, left: 0},
+            end: {thickness: 12, top: 60, left: 100},
             wave: {amplitude: 40, frequency: 0.015, transitionSpeed: -0.5}
         },
         selected: {
             type: 'selected',
-            start: {thickness: 15, top: 80, left: 0},
-            end: {thickness: 24, top: 25, left: 100},
-            wave: {amplitude: 50, frequency: 0.004, transitionSpeed: 0.5}
+            start: {thickness: 12, top: 60, left: 0},
+            end: {thickness: 12, top: 60, left: 100},
+            wave: {amplitude: 50, frequency: 0.004, transitionSpeed: 0.3}
         }
     }
 
@@ -93,7 +93,7 @@ export class Ribbon
                 id: '2',
                 title: 'Projects',
                 position: {current: 137, target: 37, home: 37},
-                width: 10,
+                width: 20,
                 row: 3
             },
             {
@@ -110,13 +110,13 @@ export class Ribbon
                 id: '4',
                 title: 'Contact',
                 position: {current: 175, target: 75, home: 75},
-                width: 15,
+                width: 20,
                 row: 2
             },
             {
 				type: 'back',
                 id: 'back',
-                title: '<-- Back',
+                title: '< Back',
                 position: {current: -100, target: -100, home: -100},
                 width: 10,
                 row: 1
@@ -125,7 +125,7 @@ export class Ribbon
 
         this.ribbon = this.svg.polygon().attr(
         {
-            fill: '#225522',
+            fill: '#3c5952',
             stroke: 'none'
         });   
         
@@ -323,20 +323,49 @@ export class Ribbon
         return polyString;
     }
 
-    onBlockClick(e:any)
-    {
-        let selectedBlock:string = "";
-
-        for(var i = 0; i < e.path.length; i++)
-        {
-            if(e.path[i].nodeName == 'g')
-            {
-                selectedBlock = e.path[i].id;
+    onBlockClick(e: any) {
+        let selectedBlock: string = "";
+    
+        // Use e.composedPath() if available, otherwise fallback to e.path
+        const path = e.composedPath ? e.composedPath() : e.path;
+    
+        for (var i = 0; i < path.length; i++) {
+            if (path[i].nodeName == 'g') {
+                selectedBlock = path[i].id;
                 break;
             }
         }
+    
+        if (selectedBlock) this.selectBlock(selectedBlock);
+    }
+    
+    navigateToSection(sectionId: string) {
+        switch (sectionId) {
+            case '1': // Home
+                this.scrollToSection('landing-section');
+                break;
+            case '2': // Projects
+                this.scrollToSection('project-section');
+                break;
+            case '3': // About Me
+                this.scrollToSection('about-section');
+                break;
+            case '4': // Contact
+                this.scrollToSection('contact-section');
+                break;
+            case 'back':
+                this.deselectBlock();
+                break;
+            default:
+                break;
+        }
+    }
 
-        if(selectedBlock) this.selectBlock(selectedBlock);
+    scrollToSection(sectionId: string) {
+        const sectionElement = document.getElementById(sectionId);
+        if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 
     resizeSVG()

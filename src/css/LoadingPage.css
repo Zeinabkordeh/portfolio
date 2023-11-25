@@ -4,7 +4,7 @@
 
 .loading-page {
     text-align:center;
-    padding-top:30vh;
+    padding-top:40vh;
     height:100vh;
     overflow:hidden;
     -webkit-backface-visibility: hidden;
@@ -155,6 +155,7 @@
     position: relative; 
     margin: 0 auto;
     bottom: 20rem;
+    color: #7c7b7b;
   }
 
 

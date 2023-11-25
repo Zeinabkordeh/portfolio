@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import '../css/ProjectsPage.css';
 import singlePageContent from '../hooks/singlePageContents';
 import { truncateText } from '../utils/truncateText';
-import ColorModeSwitch from './ColorModeSwitch';
+// import ColorModeSwitch from './ColorModeSwitch';
 import FooterSection from './FooterSection';
+import ToggleNav from './ToggleNav';
 
 function ProjectsPage() {
 //   const { id } = useParams();
@@ -49,7 +50,8 @@ function ProjectsPage() {
 
   return (
     <>
-      <ColorModeSwitch />
+      <ToggleNav/>
+      {/* <ColorModeSwitch /> */}
       {isDesktop && <div className="app-cursor"></div>}
       <Box className='project-card-design'>
         {/* <SimpleGrid   templateRows='repeat(2, 1fr)' templateColumns='repeat(3, 1fr)'> */}
