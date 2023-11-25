@@ -63,7 +63,13 @@ const SingleProjectPage = () => {
           />
           <Stack mt='6' spacing='3'>
             <Heading size='md'>{content[0].title}</Heading>
-            <Text>{content[0].mainText}</Text>
+            <Text whiteSpace={"break-spaces"}>{content[0].mainText}</Text>
+
+            <Heading size='md'>What I've Learned</Heading>
+            <Text>
+            {content[0].subText}
+            </Text>
+          
           </Stack>
           <Box>
             <ul className='tools-section'>

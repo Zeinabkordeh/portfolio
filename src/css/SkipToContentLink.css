@@ -1,0 +1,17 @@
+.skip-to-content-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  .skip-to-content-link:focus,
+  .skip-to-content-link:active {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  

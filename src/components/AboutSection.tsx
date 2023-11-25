@@ -54,16 +54,16 @@ const AboutSection = () => {
       <section className='aboutMe' id='about-section'>
         <h1 className='about-title'>About Me</h1>
         <img src="/image/zeinab.jpg" alt="My Image" width='180px' />
-        <div>
-          <p>Hey there, fellow coder and design aficionado!</p>
+        <div className='aboutMe-section'>
+          <p className='about-texts'>Hey there, fellow coder and design aficionado!</p>
           <br />
-          <p>I'm Zeinab a passionate front-end web developer with a love for crafting seamless digital experiences. This space is where lines of code and pixels dance together, bringing ideas to life.</p>
+          <p className='about-texts'>I'm Zeinab a passionate front-end web developer with a love for crafting seamless digital experiences. This space is where lines of code and pixels dance together, bringing ideas to life.</p>
           <br />
-          <p>Whether you're here for inspiration, collaboration, or a bit of both, I'm excited to share my journey with you. Let's build something extraordinary!</p>
+          <p className='about-texts'>Whether you're here for inspiration, collaboration, or a bit of both, I'm excited to share my journey with you. Let's build something extraordinary!</p>
           <br />
-          <p>Happy coding,</p>
+          <p className='about-texts'>Happy coding,</p>
           <div style={{ margin: '10px 0' }}></div>
-          <p>Zeinab Kordeh</p>
+          <p className='about-texts'>Zeinab Kordeh</p>
           <div style={{ margin: '20px 0' }}></div>
         </div>
         <Accordion allowToggle>
@@ -78,8 +78,10 @@ const AboutSection = () => {
             </h2>
             <AccordionPanel pb={4}>
             <div className='bio-section'>
-              <p>With a master's degree in architectural design, my passion for design and technology naturally led me into the world of web design. It's where I've found the sweet spot, striking a balance between creativity and tech wizardry. Beyond the professional realm, you'll often find me practicing yoga for that much-needed Zen moment or hitting the hiking trails to escape the digital grind. And when I'm not pixel-pushing, I'm all about painting and crafting, it's like my little analog escape room.</p>
-
+              <p>With a master's degree in architectural design, my passion for design and technology naturally led me into the world of web design. It's where I've found the sweet spot, striking a balance between creativity and tech wizardry. </p>
+              <div style={{ margin: '20px 0' }}></div>
+              <p>Beyond the professional realm, you'll often find me practicing yoga for that much-needed Zen moment or hitting the hiking trails to escape the digital grind. And when I'm not pixel-pushing, I'm all about painting and crafting, it's like my little analog escape room.</p>
+              <div style={{ margin: '20px 0' }}></div>
               <p>These interests provide a well-rounded perspective, injecting a touch of artistry and aesthetics into my digital work. So, I'm your go-to person for creating visually appealing and user-friendly websites, blending my love for design and technology into a neat online package.</p>
             </div>
             </AccordionPanel>
@@ -95,10 +97,9 @@ const AboutSection = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.
+            <p>a paint-wielding wizard by night and coding aficionado by day. When not wrangling pixels, you'll catch me on obscure hiking trails or turning everyday objects into funky art. </p>
+            <div style={{ margin: '20px 0' }}></div>
+            <p>My gym escapades are my secret superhero training, and I can't resist a good cup of coffee, it's my coding potion. Join me in this quirky journey where code meets canvas and every day is a crafting adventure!</p>
             </AccordionPanel>
           </AccordionItem>
 

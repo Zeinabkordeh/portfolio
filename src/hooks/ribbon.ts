@@ -337,6 +337,8 @@ export class Ribbon
         }
     
         if (selectedBlock) this.selectBlock(selectedBlock);
+        if (selectedBlock) this.navigateToSection(selectedBlock);
+
     }
     
     navigateToSection(sectionId: string) {
