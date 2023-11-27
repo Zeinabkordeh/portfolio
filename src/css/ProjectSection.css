@@ -4,19 +4,19 @@
 }
 
 .project-title{
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: .5rem;
   font-weight: 500;
   font-family: 'Bebas Neue', sans-serif;
   color: #405852;
+  margin-left: 1rem;
 }
 
 .mySwiper {
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 10rem;
-}
+  padding-bottom: 60px;
+  padding-bottom: 150px;}
 
 .projects {
   background-position: center;
@@ -55,7 +55,7 @@
   font-weight: 800;
   font-size: 1rem;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   margin: 1.5rem;
   padding: 2rem;
   color: #405852;
@@ -165,6 +165,10 @@
     display: flex;
     font-size: .9rem;
   }
+
+  .read-more{
+    justify-content: right;
+  }
 }
 
 @media (min-width: 751px) and (max-width: 1200px) {
@@ -190,6 +194,7 @@
 
 .read-more{
   margin: 2rem 1rem;
+  justify-content: right;
 }
 .projects img {
   width: 90%;
@@ -217,7 +222,7 @@
     }
 
   .read-more{
-    margin: 2rem 0;
+    justify-content: right;
   }
   .projects img {
     width: 90%;

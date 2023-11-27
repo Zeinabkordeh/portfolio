@@ -2,7 +2,13 @@
     background-color: #597a722b;
     padding-top: 4rem;
     padding-bottom: .5rem;
+
 }
+
+.aboutMe-section {
+    font-size: .9rem;
+    margin-left: 1rem;
+  }
 
 .aboutMe{
     max-width: 90%;
@@ -40,11 +46,14 @@
     font-weight: 500;
     font-family: 'Bebas Neue', sans-serif;
     color: #405852;
+    margin-left: 1rem;
 }
 
 .about-sections {
     border-left: .01rem gray solid;
-    box-shadow: 2px  1px rgba(128, 128, 128, 0.732);;
+    box-shadow: 2px  1px rgba(128, 128, 128, 0.732);
+    display: flex;
+    justify-content: center;
 }
 
 .css-1eziwv {
@@ -58,9 +67,19 @@
 }
 
 
+
+.chakra-accordion__item.about-sections.css-17mg6aq {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: .9rem;
+}
+
 @media (min-width: 600px) and (max-width: 1200px) {
 
-
+    .aboutMe-section{
+        font-size: 1rem;
+    }
 
     .aboutMe{
         max-width: 85%;
@@ -102,7 +121,10 @@
             position: absolute;
             right: 25%;
         }
+    }
 
+    .aboutMe-section{
+        font-size: 1rem;
     }
 }
 
