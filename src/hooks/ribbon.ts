@@ -40,8 +40,8 @@ export class Ribbon
         },
         selected: {
             type: 'selected',
-            start: {thickness: 12, top: 60, left: 0},
-            end: {thickness: 12, top: 60, left: 100},
+            start: {thickness: 11, top: 60, left: 0},
+            end: {thickness: 11, top: 60, left: 100},
             wave: {amplitude: 50, frequency: 0.004, transitionSpeed: 0.3}
         }
     }
@@ -74,6 +74,7 @@ export class Ribbon
 	constructor(svg: any) 
 	{
         this.svg = svg;
+        // window.addEventListener('scroll', () => this.onScroll());
     }
 
     init() 
@@ -344,7 +345,7 @@ export class Ribbon
     navigateToSection(sectionId: string) {
         switch (sectionId) {
             case '1': // Home
-                this.scrollToSection('landing-section');
+                this.scrollToSection('topHeader');
                 break;
             case '2': // Projects
                 this.scrollToSection('project-section');
@@ -356,7 +357,7 @@ export class Ribbon
                 this.scrollToSection('contact-section');
                 break;
             case 'back':
-                this.deselectBlock();
+                this.scrollToSection('topHeader');
                 break;
             default:
                 break;
@@ -369,6 +370,15 @@ export class Ribbon
             sectionElement.scrollIntoView({ behavior: 'smooth' });
         }
     }
+
+    // onScroll() {
+    //     const scrollY = window.scrollY || window.pageYOffset;
+    //     const newRootPos = scrollY * 0.1;
+    //     if (this.rootPos !== newRootPos) {
+    //         this.rootPos = newRootPos;
+    //         this.updateRibbon();
+    //     }
+    // }
 
     resizeSVG()
     {
@@ -438,6 +448,7 @@ export class Ribbon
         this.setState(this.states.home);
     }
 
+    
     setState(newState: State)
     {
         // var transitionSpeed = 2;
@@ -464,6 +475,8 @@ export class Ribbon
             if(block.position.current !== block.position.target) TweenMax.to(block.position, this.speed.changeState, {current: block.position.target, ease: ease});
         }
     }
+
+    
 }
 
 

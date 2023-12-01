@@ -20,6 +20,10 @@
     }
 }
 
+.media-icons-footer{
+    z-index: 2;
+}
+
 
 .media-icon{
     margin: 1rem;

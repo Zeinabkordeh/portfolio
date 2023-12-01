@@ -12,6 +12,10 @@ function ProjectsPage() {
 //   const { id } = useParams();
   const [isDesktop, setIsDesktop] = useState<boolean>(false);
 
+  const scrollToTopOnPageLoad = () => {
+    window.scrollTo(0, 0);
+  };
+  
   useEffect(() => {
     const toggleCursor = () => {
       setIsDesktop(window.innerWidth >= 800);
@@ -58,8 +62,8 @@ function ProjectsPage() {
 
             {singlePageContent.map((content, index) => (
                 
-            <Card key={index} className='project-card-single'>
-                <CardHeader>
+            <Card key={index} className='project-card-single' >
+                <CardHeader id={content.id}>
                 <Image
                     m = '0 auto'
                     src={content.imageSmall}
@@ -81,6 +85,7 @@ function ProjectsPage() {
             {/* </SimpleGrid> */}
         </Box>
         <FooterSection />
+        {scrollToTopOnPageLoad()}
     </>
   );
 }

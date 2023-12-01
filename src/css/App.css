@@ -1,8 +1,9 @@
-
-body p{
+body {
+  margin: 0;
+ p{
     font-family: 'Poppins', sans-serif;
   }
-  
+} 
   .app-cursor {
     /* border: 1px solid #04cca4a3; */
     width: 25px;

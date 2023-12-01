@@ -2,7 +2,6 @@
     background-color: #597a722b;
     padding-top: 4rem;
     padding-bottom: .5rem;
-
 }
 
 .aboutMe-section {
@@ -64,6 +63,8 @@
     svg{
         margin-right: .5rem;
     }
+    z-index: 2;
+
 }
 
 

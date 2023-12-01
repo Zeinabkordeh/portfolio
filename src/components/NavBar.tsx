@@ -21,11 +21,7 @@ const Navbar: React.FC = () => {
     <>
       <div className="container" style={{ width: '100%', maxWidth: '100%' }}>
       <TextTransition/>
-      <svg id="svg" ref={svgRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 889" style={{ width: '100%', height: 'auto' }}></svg>
-      </div>
-      <div className='scroll-section'>
-        {/* <div className='line'></div>
-        <p className='scroll-down'>scroll</p> */}
+      <svg id="svg" ref={svgRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 889" style={{ width: '100%', height: 'auto' }}></svg>
       </div>
     </>
   );

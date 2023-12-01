@@ -18,7 +18,7 @@ const AnimatedHeading: React.FC = () => {
 
 
   return (
-    <div className='topHeader'>
+    <div className='topHeader' id='topHeader'>
         <ToggleNav/>
         <img className={`logo-style ${isVisible ? 'visible' : ''}`} src="/image/logo.svg" alt="logo" />
         <h1 className={`animated-heading ${isVisible ? 'visible' : ''}`}>

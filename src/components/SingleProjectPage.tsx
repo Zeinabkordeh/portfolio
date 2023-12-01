@@ -13,6 +13,10 @@ const SingleProjectPage = () => {
   const content = singlePageContent.filter(item => item.id === id);
   const [isDesktop, setIsDesktop] = useState<boolean>(false);
 
+  const scrollToTopOnPageLoad = () => {
+    window.scrollTo(0, 0);
+  };
+  
   useEffect(() => {
     const toggleCursor = () => {
       setIsDesktop(window.innerWidth >= 800);
@@ -53,7 +57,7 @@ const SingleProjectPage = () => {
     <>
       <ToggleNav/>
       {isDesktop && <div className="app-cursor"></div>}
-      <Card className='single-card'>
+      <Card className='single-card' id={content[0].id}>
         <CardBody>
           <Image
             m = '0 auto'
@@ -96,6 +100,7 @@ const SingleProjectPage = () => {
         </CardFooter>
       </Card>
       <FooterSection />
+      {scrollToTopOnPageLoad()}
     </>
   );
 }

@@ -11,7 +11,7 @@ const FooterSection = () => {
     <>
       <div className='footer-section' style={{ color: theme.primaryColor, backgroundColor: theme.secondaryColor }}>
         <h1>Contact With Me!</h1>
-        <div>
+        <div className='media-icons-footer'>
             <a href="https://www.linkedin.com/in/zeinabkordeh/">
               <Icon className='media-icon' as={GrLinkedinOption} boxSize={6}/>
             </a>
