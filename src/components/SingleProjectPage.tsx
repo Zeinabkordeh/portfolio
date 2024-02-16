@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import singlePageContent from '../hooks/singlePageContents';
 import { FaGithub } from "react-icons/fa";
 import { LuScreenShare } from "react-icons/lu";
@@ -12,11 +12,12 @@ const SingleProjectPage = () => {
   const { id } = useParams();
   const content = singlePageContent.filter(item => item.id === id);
   const [isDesktop, setIsDesktop] = useState<boolean>(false);
+  const navigator = useNavigate();
 
   const scrollToTopOnPageLoad = () => {
     window.scrollTo(0, 0);
   };
-  
+
   useEffect(() => {
     const toggleCursor = () => {
       setIsDesktop(window.innerWidth >= 800);
@@ -73,7 +74,7 @@ const SingleProjectPage = () => {
             <Text>
             {content[0].subText}
             </Text>
-          
+
           </Stack>
           <Box>
             <ul className='tools-section'>
@@ -82,6 +83,11 @@ const SingleProjectPage = () => {
                 ))}
             </ul>
           </Box>
+
+          <Text>
+            {content[0].password}
+          </Text>
+          
         </CardBody>
         <Divider />
         <CardFooter>
@@ -96,11 +102,25 @@ const SingleProjectPage = () => {
                 Live Site
               </Link>
             </Button>
+
           </ButtonGroup>
         </CardFooter>
       </Card>
+            <Box className='button-back'>
+              <Button
+                bgColor='#597A72' 
+                color='#E7E7E7' 
+                variant="solid"
+                onClick={() => navigator("/?direct=true")}
+                marginY={3}
+              >
+                Back to Main
+              </Button>
+            </Box>
       <FooterSection />
+
       {scrollToTopOnPageLoad()}
+
     </>
   );
 }

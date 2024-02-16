@@ -27,21 +27,23 @@ const ToggleNav: React.FC = () => {
                 <RiMenuUnfoldFill onClick={closeNav} />
             </section>
             <section className="nav-menu">
-            <div className='media-icons'>
-                <p> Let’s create your online success together. </p>
-                <a href="https://www.linkedin.com/in/zeinabkordeh/">
-                <Icon className='media-icon' as={GrLinkedinOption} boxSize={6}/>
-                </a>
-                <a href="mailto:your.email@example.com">
-                <Icon className='media-icon' as={GrMail} boxSize={6}/>
-                </a>
-                <a href="https://github.com/Zeinabkordeh">
-                <Icon className='media-icon' as={GrGithub}boxSize={6}/>
-                </a>
+              <div className='media-icons'>
+                <p className='moto-navbar'> Let’s create your online success together. </p>
+                <div className='icon-media-taggle'>
+                  <a href="https://www.linkedin.com/in/zeinabkordeh/">
+                  <Icon className='media-icon' as={GrLinkedinOption} boxSize={6}/>
+                  </a>
+                  <a href="mailto:your.email@example.com">
+                  <Icon className='media-icon' as={GrMail} boxSize={6}/>
+                  </a>
+                  <a href="https://github.com/Zeinabkordeh">
+                  <Icon className='media-icon' as={GrGithub}boxSize={6}/>
+                  </a>
+                </div>
               </div>
               <ul>
                   <li>
-                    <Link to="/" >Home</Link>
+                  <Link to="/?direct=true" >Home</Link>
                   </li>
                   <li>
                     <Link to="/projects" >Projects</Link>

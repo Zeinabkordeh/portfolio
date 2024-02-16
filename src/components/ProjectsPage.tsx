@@ -1,5 +1,6 @@
 import { Box, Button, Card, CardBody, CardFooter, CardHeader, Heading, Image, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../css/ProjectsPage.css';
 import singlePageContent from '../hooks/singlePageContents';
@@ -11,7 +12,7 @@ import ToggleNav from './ToggleNav';
 function ProjectsPage() {
 //   const { id } = useParams();
   const [isDesktop, setIsDesktop] = useState<boolean>(false);
-
+  const navigator = useNavigate();
   const scrollToTopOnPageLoad = () => {
     window.scrollTo(0, 0);
   };
@@ -27,6 +28,7 @@ function ProjectsPage() {
         cursor.setAttribute('style', `top: ${e.pageY - 10}px; left: ${e.pageX - 10}px;`);
       }
     };
+
 
     const handleMouseClick = () => {
       const cursor = document.querySelector<HTMLElement>('.app-cursor');
@@ -83,6 +85,17 @@ function ProjectsPage() {
             </Card>
             ))}
             {/* </SimpleGrid> */}
+        </Box>
+        <Box className='button-back'>
+            <Button
+              bgColor='#597A72' 
+              color='#E7E7E7' 
+              variant="solid"
+              onClick={() => navigator("/?direct=true")}
+              marginY={3}
+            >
+              Back to Main
+            </Button>
         </Box>
         <FooterSection />
         {scrollToTopOnPageLoad()}

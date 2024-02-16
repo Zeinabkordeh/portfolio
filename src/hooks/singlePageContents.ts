@@ -8,6 +8,7 @@ interface SinglePageContent {
     liveSiteAddress?: string;
     imageSmall?: string;
     subText?: string;
+    password?: string;
 }
 
 const singlePageContent: SinglePageContent[] = [
@@ -48,10 +49,11 @@ const singlePageContent: SinglePageContent[] = [
         imageHeader: "/image/zekoyoga.png",
         imageSmall: "/image/zekoyoga-s.png",
         title: "ZekoYoga",
-        mainText: "Designed and implemented the Zekoyoga website on Shopify, featuring a streamlined user interface and integrated purchase functionality. This project showcases my skills in e-commerce web development, emphasizing a user-friendly design and a seamless purchasing experience within the Shopify platform. \n\nThe inclusion of secure and efficient transaction processes enhances the overall functionality of the site, demonstrating my ability to create robust online shopping solutions.",
+        mainText: "Designed and implemented the Zekoyoga website on Shopify, featuring a streamlined user interface and integrated purchase functionality. This project showcases my skills in e-commerce web development, emphasizing a user-friendly design and a seamless purchasing experience within the Shopify platform.\n\n The inclusion of secure and efficient transaction processes enhances the overall functionality of the site, demonstrating my ability to create robust online shopping solutions.",
         tools: ["Shopify"],
         liveSiteAddress: "https://zekoyoga.myshopify.com/",
         subText: "Flexed e-commerce muscles with Shopify, crafting a streamlined and secure shopping experience, showcasing expertise in creating robust online shopping solutions.",
+        password: "To access the store, visitors must use the password: fwd",
     },
 
     {   id: "game",
@@ -61,7 +63,7 @@ const singlePageContent: SinglePageContent[] = [
         mainText: "Crafted an immersive Breakout ball game using JavaScript, complete with sound integration and adjustable difficulty modes. This project highlights my expertise in front-end development, incorporating both audio elements for a dynamic gaming experience and customizable difficulty settings to cater to diverse player preferences.\n\n The combination of interactive gameplay, sound design, and user customization underscores my proficiency in creating engaging and versatile web-based games.",
         tools: ["JavaScript", "HTML", "CSS", "Figma"],
         gitHubAddress: "https://github.com/Zeinabkordeh/Breakout-Ball-Game",
-        liveSiteAddress: "",
+        liveSiteAddress: "https://zeiko.ca/breakball/",
         subText: "Scored big in front-end game development, hitting the mark with an immersive Breakout ball game featuring sound integration and customizable difficulty settings.",
     },  
 
@@ -72,7 +74,7 @@ const singlePageContent: SinglePageContent[] = [
         mainText: "Developed a feature-rich calculator using React, enabling basic arithmetic operations with decimal precision. Advanced memory functions (M+, M-, MR, MC) provide enhanced usability.\n\n The clean and intuitive interface ensures a seamless user experience. This project showcases my proficiency in React and ability to create interactive, functional applications.",
         tools: ["React", "HTML", "CSS"],
         gitHubAddress: "https://github.com/Zeinabkordeh/calculator",
-        liveSiteAddress: "",
+        liveSiteAddress: "https://zeiko.ca/Calculator/",
         subText: "Crunched the numbers with React, delivering a feature-rich calculator with advanced memory functions, showcasing proficiency in creating interactive and functional applications.",    },
 
    

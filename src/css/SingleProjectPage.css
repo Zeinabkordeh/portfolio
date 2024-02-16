@@ -10,7 +10,6 @@
 
     p{
         margin: 2rem;
-        margin-top: 0;
         text-align:justify ;
     }
 }
@@ -21,10 +20,11 @@
 
 .tools-section{
     margin-left: 2rem;
-    list-style: none;
+    /* list-style: none; */
 
     li{
         margin-bottom: .5rem;
+        font-weight: 600;
     }
 }
 
@@ -48,4 +48,9 @@
         justify-content: left;
         margin-left: 2rem;
     }
+}
+
+.button-back{
+    display: flex;
+    justify-content: center;
 }
